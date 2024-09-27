@@ -56,6 +56,17 @@
     gap: 10px;
 }
 
+.header_number-text {
+    position: relative;
+}
+
+.header_number-text p {
+    color: var(--cosmos-cream);
+    position: absolute;
+    top: -18px;
+    left: 0;
+}
+
 .header-number img {
     max-width: 40px;
     width: 100%;
@@ -116,10 +127,12 @@
         flex-direction: column;
         justify-content: space-evenly;
         background-color: var(--cosmos-base);
-        height: 100%;
+        height: 100vh;
         width: 250px;
         animation-duration: 1.2s;
         transition: .5s ease;
+        overflow-y: scroll;
+        padding: 20px 0;
     }
 
     .header-icon a img{
