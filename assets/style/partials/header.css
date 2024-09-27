@@ -1,7 +1,9 @@
 .header_main-container {
-    background-color: var(--cosmos-black);
     position: fixed;
     top: 0;
+    transition: .5s ease;
+    backdrop-filter: blur(1.5px);
+    z-index: 10;
 }
 
 .header_main-subcontainer {
@@ -99,6 +101,13 @@
     padding-top: 5px;
     padding-bottom: 5px;
     transition: .3s ease;
+}
+
+.header-sticky {
+    background-color: rgba(0, 0, 0, 0.521);
+    transition: .5s ease;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 #322c598e;
 }
 
 @keyframes showSidebar {

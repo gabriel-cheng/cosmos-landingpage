@@ -1,0 +1,330 @@
+.content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content_container-title {
+    text-align: center;
+}
+
+.content_container-title p {
+    color: var(--cosmos-cream);
+    font-size: 1.2rem;
+}
+
+.content_container-title h1 {
+    color: var(--cosmos-cream);
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+.title_span-style {
+    color: var(--cosmos-hard-pink);
+}
+
+.generic_button-about {
+    background-color: transparent;
+    color: var(--cosmos-cream);
+    outline: none;
+    border: 1px solid var(--cosmos-cream);
+    width: 250px;
+    height: 50px;
+    font-weight: 200;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.generic_button-about:hover {
+    background-color: var(--cosmos-hover-1);
+    transition: .3s ease;
+}
+
+.our_products {
+    padding-top: 120px;
+}
+
+.our_products-title {
+    display: flex;
+    justify-content: center;
+}
+
+.our_products-title h1 {
+    color: var(--cosmos-hard-pink);
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_products-title h1::after {
+    content: "";
+    width: 60%;
+    height: 1.5px;
+    background-color: var(--cosmos-hard-pink);
+}
+
+.our_products-description {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.our_products-description p {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.our_products-items {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border: 0.5px solid rgba(219, 218, 218, 0.575);
+    border-bottom: 0.5px solid var(--cosmos-hard-pink);
+    width: 352px;
+    height: 240px;
+    transition: .1s ease-in;
+}
+
+.product_item:hover {
+    background-color: var(--cosmos-hard-pink);
+    color: var(--cosmos-cream);
+    transition: .1s ease-in;
+}
+
+.product_item:hover .product_item-image {
+    color: var(--cosmos-cream);
+}
+
+.product_item-image {
+    color: var(--cosmos-hard-pink);
+}
+
+.product_item-title h1 {
+    font-weight: 400;
+}
+
+.product_item-description {
+    max-width: 260px;
+    width: 100%;
+    text-align: justify;
+}
+
+.product_item-description p {
+    font-size: 0.9rem;
+}
+
+.lets_change-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-smooth {
+    background-color: rgba(0, 0, 0, 0.548);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.lets_change-subcontainer {
+    z-index: 1;
+}
+
+.earth_video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+}
+
+.lets_change-subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    color: var(--cosmos-cream);
+    padding: 130px 0;
+}
+
+.lets_change-title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.lets_change-title img {
+    width: 50px;
+}
+
+.lets_change-title h1 {
+    font-size: 3rem;
+}
+
+.lets_change-description p {
+    font-size: calc(1vw + 5px);
+}
+
+.lets_change-button {
+    width: 300px;
+    height: 80px;
+    background-color: transparent;
+    color: var(--cosmos-cream);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: 1px solid var(--cosmos-cream);
+    outline: 0;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.lets_change-button:hover {
+    background-color: var(--cosmos-hover-1);
+    transition: .2s ease-in;
+}
+
+.ideals_main-subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 60px;
+}
+
+.ideals_main-title h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.ideais_item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.ideals_item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.ideals_item-top {
+    color: var(--cosmos-hard-pink);
+    text-align: center;
+    width: 140px;
+}
+
+.ideals_item-title h1 {
+    color: var(--cosmos-black);
+    font-size: 1.9rem;
+}
+
+.ideals_item-text {
+    text-align: justify;
+    max-width: 700px;
+    width: 100%;
+}
+
+.ideals_item-values {
+    list-style: none;
+}
+
+.value_topic {
+    font-weight: 600;
+}
+
+.our_ceo-container {
+    background-image: url("../../images/backgrounds/sorriso-recortado-1080-pretobranco.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--cosmos-cream);
+}
+
+.our_ceo-subcontainer {
+    padding: 40px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.our_ceo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_ceo-title p {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 15px;
+}
+
+.our_ceo-title h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 15px;
+}
+
+.our_ceo-description-items {
+    list-style: none;
+}
+
+.our_ceo-description-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.our_ceo-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.our_ceo-status h1 {
+    color: var(--cosmos-hard-pink);
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.our_ceo-status p {
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1176px) {
+    .our_products-items {
+        justify-content: center;
+    }
+}
