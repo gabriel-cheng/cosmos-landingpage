@@ -1,22 +1,26 @@
 .header_main-container {
     background-color: var(--cosmos-black);
+    position: fixed;
+    top: 0;
 }
 
 .header_main-subcontainer {
     padding: 20px 0;
+    transition: .3s ease;
 }
 
 .header_main-subcontainer,
-.header-navigation ul {
+.header_navigation-subcontainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.header-navigation ul {
+.header_navigation-subcontainer {
     display: flex;
     gap: 60px;
     list-style: none;
+    transition: .3s ease;
 }
 
 .header-mobile-icon {
@@ -63,7 +67,6 @@
 }
 
 .header-toggle-icon {
-    height: 100%;
     background-color: transparent;
     outline: 0;
     border: 0;
@@ -72,29 +75,66 @@
     display: none;
 }
 
+.header-mobile-social {
+    display: none;
+    gap: 20px;
+}
+
+.header-mobile-social a {
+    color: var(--cosmos-cream);
+}
+
+.header-sticky .header_main-subcontainer {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: .3s ease;
+}
+
+@keyframes showSidebar {
+    from { margin-left: -100vw; }
+    to { margin-left: 0; }
+}
+
 @media screen and (max-width: 1027px) {
     .header-toggle-icon {
-        display: block;
+        display: flex;
     }
 
     .header-navigation {
         position: absolute;
         top: 0;
         left: 0;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.637);
+        width: 100%;
+        margin-left: -100vw;
+        transition: .8s ease;
+        animation-duration: 1s;
+    }
+    
+    .header_navigation-subcontainer {
+        flex-direction: column;
+        justify-content: space-evenly;
         background-color: var(--cosmos-base);
         height: 100%;
         width: 250px;
+        animation-duration: 1.2s;
+        transition: .5s ease;
     }
 
-    .header-navigation ul {
-        flex-direction: column;
-    }
-
-    .header-icon {
-        display: none;
+    .header-icon a img{
+        width: 120px;
     }
 
     .header-mobile-icon {
         display: block;
+    }
+
+    .header-mobile-social {
+        display: flex;
+    }
+
+    .header-number {
+        display: none;
     }
 }
