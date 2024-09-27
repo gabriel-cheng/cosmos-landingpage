@@ -9,14 +9,15 @@ function toggleSidebar() {
     if(showSidebar) {
         navigation.style.marginLeft = "0";
         navigation.style.animationName = "showSidebar";
+
         document.body.style.overflow = "hidden";
         
         navigation_subcontainer.style.marginLeft = "0";
         navigation_subcontainer.style.animationName = "showSidebar";
-
+        
         return;
     }
-
+    
     document.body.style.overflow = "unset";
     navigation.style.animationName = "";
     navigation.style.marginLeft = "-100vw";
