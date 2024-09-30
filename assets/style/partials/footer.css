@@ -1,49 +1,105 @@
 .footer_main-container {
     background-color: var(--cosmos-black);
-    flex-direction: column;
-    align-items: center;
+    color: var(--cosmos-cream);
 }
 
 .footer_main-subcontainer {
     display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer_first-content {
+    display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 50px 0;
+    gap: 20px;
+}
+
+.footer_nav-items {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.footer_nav-item {
+    text-wrap: nowrap;
+    position: relative;
+    color: var(--cosmos-cream);
+}
+
+.footer_nav-item-after::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    right: -10px;
+    background-color: var(--cosmos-cream);
+    position: absolute;
+}
+
+.footer_company-name-text {
+    font-weight: 100;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.footer_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer_info-icon {
+    display: flex;
+    background-color: var(--cosmos-gray);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.info_text a p {
+    color: var(--cosmos-cream);
+}
+
+.footer_about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_about-text p {
+    width: 300px;
+    text-align: justify;
+    line-height: 17px;
+    font-weight: 300;
+    font-size: 0.9rem;
 }
 
 .footer_social {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
+    gap: 10px;
 }
 
-.footer_social a {
-    color: var(--cosmos-black);
+.social_item {
+    color: var(--cosmos-cream);
+}
+
+.footer_social-item:hover {
     background-color: var(--cosmos-cream);
-    padding: 10px;
-    border-radius: 30px;
 }
 
-.footer_nav-subcontainer {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    list-style: none;
-    width: 100%;
+.footer_social-item:hover .social_item {
+    color: var(--cosmos-gray);
 }
 
-.footer_nav-subcontainer li {
-    color: var(--cosmos-cream);
-}
-
-.footer_info-container {
-    width: 100%;
+.footer_social-item {
     background-color: var(--cosmos-gray);
-    text-align: center;
-    padding: 7px 20px;
-}
-
-.footer_info {
-    color: var(--cosmos-cream);
+    padding: 8px;
 }

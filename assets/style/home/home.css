@@ -1,3 +1,8 @@
+:root {
+    --swiper-navigation-color: var(--cosmos-base);
+    --swiper-pagination-color: var(--cosmos-base);
+}
+
 .content_container {
     display: flex;
     justify-content: center;
@@ -167,7 +172,8 @@
     align-items: center;
     gap: 30px;
     color: var(--cosmos-cream);
-    padding: 130px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .lets_change-title {
@@ -268,7 +274,8 @@
 }
 
 .our_ceo-subcontainer {
-    padding: 40px 0;
+    padding-top: 120px;
+    padding-bottom: 120px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -321,6 +328,76 @@
 
 .our_ceo-status p {
     font-size: 0.9rem;
+}
+
+.sustain_adjust {
+    flex-direction: column;
+    gap: 0;
+}
+
+.sustain_adjust p {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.sustain_adjust h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 4rem;
+}
+
+.sustain_title-style {
+    color: #45a000;
+}
+
+.sustain_description-adjust {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sustain_description-adjust p {
+    font-size: 1.2rem;
+    text-indent: 80px;
+}
+
+.versatility_carousel {
+    list-style: none;
+}
+
+.versatility_carousel-subcontainer {
+    max-width: 1200px;
+    margin: 0 60px 35px;
+    overflow: hidden;
+}
+
+.versatility_carousel-item img {
+    border-radius: 10px;
+}
+
+.versatility_main-subcontainer {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.versatility_title,
+.versatility_description {
+    display: flex;
+    justify-content: center;
+}
+
+.versatility_title h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--cosmos-black);
+}
+
+.versatility_description p {
+    color: var(--cosmos-black);
+}
+
+.versatility_carousel-container {
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 1176px) {
