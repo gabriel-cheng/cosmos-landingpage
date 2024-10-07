@@ -90,15 +90,12 @@
     gap: 10px;
 }
 
-.social_item {
+.footer_social-item {
     color: var(--cosmos-cream);
 }
 
 .footer_social-item:hover {
     background-color: var(--cosmos-cream);
-}
-
-.footer_social-item:hover .social_item {
     color: var(--cosmos-gray);
 }
 
@@ -138,7 +135,7 @@
 @media screen and (max-width: 422px) {
     .footer_info-item {
         flex-direction: column;
-        gap: 0;
+        gap: 5px;
     }
 
     .footer_infos {
