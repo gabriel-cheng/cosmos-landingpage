@@ -9,10 +9,14 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    z-index: 1;
 }
 
 .content_container-title {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .content_container-title p {
@@ -23,7 +27,7 @@
 .content_container-title h1 {
     color: var(--cosmos-cream);
     font-weight: 300;
-    font-size: 3rem;
+    font-size: calc(1vw + 30px);
 }
 
 .title_span-style {
@@ -56,12 +60,13 @@
 .our_products-title {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .our_products-title h1 {
     color: var(--cosmos-hard-pink);
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: calc(1vw + 25px);
     text-transform: uppercase;
     position: relative;
     width: fit-content;
@@ -81,10 +86,11 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    text-align: center;
 }
 
 .our_products-description p {
-    font-size: 3rem;
+    font-size: calc(1vw + 30px);
     font-weight: 200;
 }
 
@@ -144,16 +150,6 @@
     overflow: hidden;
 }
 
-.background-smooth {
-    background-color: rgba(0, 0, 0, 0.548);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-}
-
 .lets_change-subcontainer {
     z-index: 1;
 }
@@ -178,8 +174,9 @@
 
 .lets_change-title {
     display: flex;
-    gap: 20px;
     align-items: center;
+    gap: 20px;
+    text-align: center;
 }
 
 .lets_change-title img {
@@ -187,11 +184,7 @@
 }
 
 .lets_change-title h1 {
-    font-size: 3rem;
-}
-
-.lets_change-description p {
-    font-size: calc(1vw + 5px);
+    font-size: calc(1vw + 30px);
 }
 
 .lets_change-button {
@@ -215,9 +208,6 @@
 .ideals_main-subcontainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
     gap: 60px;
 }
 
@@ -297,7 +287,7 @@
 .our_ceo-title h1 {
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: calc(1vw + 30px);
     letter-spacing: 15px;
 }
 
@@ -373,11 +363,7 @@
 
 .versatility_carousel-item img {
     border-radius: 10px;
-}
-
-.versatility_main-subcontainer {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    width: 100%;
 }
 
 .versatility_title,
@@ -388,12 +374,14 @@
 
 .versatility_title h1 {
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: calc(1vw + 25px);
     color: var(--cosmos-black);
+    text-align: center;
 }
 
 .versatility_description p {
     color: var(--cosmos-black);
+    text-align: center;
 }
 
 .versatility_carousel-container {
@@ -403,5 +391,84 @@
 @media screen and (max-width: 1176px) {
     .our_products-items {
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .ideals_item {
+        flex-direction: column;
+        gap: 10px
+    }
+
+    .ideais_item-container {
+        gap: 60px;
+    }
+
+    .ideals_item-text p,
+    .ideals_item-values {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 651px) {
+    .lets_change-title {
+        flex-direction: column;
+        gap: 40px
+    }
+
+    .lets_change-title h1 {
+        line-height: 40px;
+    }
+
+    .lets_change-title img {
+        max-width: 150px;
+        width: auto;
+    }
+
+    .lets_change-subcontainer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 70px;
+    }
+
+    .lets_change-description p {
+        text-align: justify;
+    }
+
+    .sustain_adjust {
+        gap: 3vw;
+    }
+
+    .sustain_adjust h1 {
+        font-size: 10vw;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .sustain_description-adjust p {
+        font-size: unset;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .ideals_main-title h1 {
+        font-size: calc(1vw + 30px);
+    }
+
+    .our_ceo-status {
+        text-align: center;
+    }
+
+    .our_ceo-status h1 {
+        font-size: 8vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .our_ceo-title h1 {
+        font-size: 30px;
+        letter-spacing: 8px;
     }
 }
