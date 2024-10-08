@@ -99,8 +99,8 @@
 }
 
 .header-sticky .header_main-subcontainer {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
     transition: .3s ease;
 }
 

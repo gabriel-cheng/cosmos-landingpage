@@ -30,10 +30,6 @@
     font-size: calc(1vw + 30px);
 }
 
-.title_span-style {
-    color: var(--cosmos-hard-pink);
-}
-
 .generic_button-about {
     background-color: transparent;
     color: var(--cosmos-cream);
