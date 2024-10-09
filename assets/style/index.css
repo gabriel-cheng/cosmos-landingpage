@@ -4,6 +4,7 @@
 @import url("./home/home.css");
 @import url("./sobre/sobre.css");
 @import url("./contato/contato.css");
+@import url("./produtos/produtos.css");
 
 :root {
     --cosmos-base: #322c59;
@@ -89,6 +90,10 @@ a {
 
 .title_span-green {
     color: var(--cosmos-green);
+}
+
+.title_span-salmon {
+    color: var(--cosmos-salmon);
 }
 
 @media screen and (max-width: 600px) {
