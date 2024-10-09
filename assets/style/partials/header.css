@@ -136,7 +136,7 @@
     .header_navigation-subcontainer {
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: var(--cosmos-base);
+        background-color: var(--cosmos-gray);
         height: 100vh;
         width: 250px;
         animation-duration: 1.2s;

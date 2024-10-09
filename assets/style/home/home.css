@@ -358,6 +358,7 @@
 .versatility_carousel-item img {
     border-radius: 10px;
     width: 100%;
+    border: 1px solid rgb(182, 182, 182);
 }
 
 .versatility_title,
