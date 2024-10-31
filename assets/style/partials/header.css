@@ -21,7 +21,7 @@
 
 .header_navigation-subcontainer {
     display: flex;
-    gap: 60px;
+    gap: 40px;
     list-style: none;
     transition: .3s ease;
 }
@@ -135,22 +135,62 @@
     
     .header_navigation-subcontainer {
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        align-items: start;
         background-color: var(--cosmos-gray);
-        height: 100vh;
+        height: 100%;
         width: 250px;
         animation-duration: 0.9s;
         transition: .5s ease;
         overflow-y: scroll;
-        padding: 20px 0;
+        padding: 20px;
+    }
+
+    .header_navigation-subcontainer a {
+        width: 100%;
+        position: relative;
+    }
+
+    .header_navigation-subcontainer a li {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .header-mobile-before::before,
+    .header-mobile-li::after {
+        content: "";
+        width: 100%;
+        height: 1.5px;
+        background-color: gray;
+        position: absolute;
+        left: 0;
+    }
+
+    .header-mobile-before::before {
+        top: -65%;
+    }
+
+    .header-mobile-li::after {
+        bottom: -65%;
     }
 
     .header-icon a img{
         width: 120px;
     }
 
+    .header-mobile-icon,
+    .header-mobile-icon a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
     .header-mobile-icon {
-        display: block;
+        margin-top: -30px;
+    }
+
+    .header-mobile-icon a img {
+        width: 150px;
     }
 
     .header-mobile-social {
